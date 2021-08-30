@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+:root{
+   --white:hsl(0, 0%, 100%);
+   --black:hsl(0, 0%, 0%);
+   --dark-gray:hsl(0, 0%, 55%);
+   --very-dark:hsl(0, 0%, 41%);
+}
+
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+}
+
+/* Base style */
+
+body{
+    font-size: 15px; 
+    font-family: 'Alata', sans-serif;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+img{
+    width:100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+/* Header */
+
+header{
+    height: 100vh;
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header>.container{
+    padding-top:50px;
+
+}
+
+header .flex{
+    justify-content: space-between;
+}
+
+header .grid{
+    height: 100%;
+    grid-template-columns:40% 20% 40%;
+    grid-template-rows:auto 1fr;
+}
+
+header .item-1{
+    grid-column:1/span 3;
+}
+
+header .item-2{
+    grid-column:1/span 2;
+}
+
+header .hero-text{
+    align-self: center;
+    color:var(--white);
+   
+    border:2px solid var(--white);
+    font-family: 'Josefin Sans', sans-serif;   
+    
+}
+
+
+/* header a{
+    color: var(--white);
+    margin-left:1.5rem;
+    
+} */
+
+
+
+/* Intro loopstudio */
+.intro{
+    /* max-height:500px; */
+    margin:100px 0;
+    
+}
+.intro .grid{
+    grid-template-columns:55% 15% 30%;
+    grid-template-rows:30% 70%;
+} 
+
+.intro img{
+    grid-area: 1/1/3/3;
+    height:auto;
+}
+
+.intro .intro-text{
+    grid-area:2/2/3/4;
+    background-color: var(--white);
+    height: 100%;
+}
+
+.intro .intro-text h2{
+/* text-align: center; */
+/* font-family: 'Josefin Sans', sans-serif;  */
+margin-bottom:2rem;
+}
+
+.intro .intro-text p{
+color:var(--dark-gray);
+}
+
+/* Testimonials */
+.testimonials{
+    margin-bottom:100px;
+}
+.testimonials .grid{
+grid-template-columns:1fr 1fr 1fr 1fr;
+grid-template-rows:60px 1fr 1fr;
+grid-gap:20px;
+}
+
+.testimonials .item-1{
+    grid-column:1/span 2;
+}
+
+.testimonials .item-2{
+    grid-column:3/span 2;
+    justify-self: right;
+}
+
+.testimonials .button{
+    border:2px solid var(--dark-gray);
+    color:var(--black);
+    padding:2px 20px;
+    letter-spacing: 3px;
+}
+
+.testimonials .button:hover{
+    background-color: var(--black);
+    color:var(--white);
+}
+
+.testimonials .p-title{
+    position: relative;
+    left:30px;
+    top:-100px;
+    
+    color:white;
+    font-weight: normal;
+    width:180px;
+}
+
+.testimonials .project{
+    height: 100%;
+}
+/* footer */
+
+.footer{
+padding:20px 0;
+height: 150px;
+color:white;
+background-color: var(--black);
+} 
+
+.footer>.grid{
+    justify-content: space-evenly; 
+    grid-template-columns: 50% 50%;
+
+    height: 100%;
+}
+
+ .footer .navlink{
+    margin:0 1.5rem 0 0;
+}
+
+.footer nav .flex{
+justify-content: flex-start;
+}
+
+.footer .item2{
+    grid-area:2/1/3/2;
+} 
+
+.footer .item3,.item4{
+    justify-self: end;
+}
+
+
+.footer .icons>a{
+    color:var(--white);
+    margin-left:10px;
+}
+
